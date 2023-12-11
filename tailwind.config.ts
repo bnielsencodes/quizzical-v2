@@ -23,6 +23,10 @@ const config: Config = {
       correct: "#94d7a2",
       incorrect: "#f8bcbc",
     },
+    fontFamily: {
+      inter: ["var(--font-inter)"],
+      karla: ["var(--font-karla)"],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
