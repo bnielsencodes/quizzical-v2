@@ -1,8 +1,10 @@
 import GameOptions from "./GameOptions";
+import StartButton from "./StartButton";
 
 export default function Start({
   gameOptions,
   handleChange,
+  startGame,
 }: {
   gameOptions: {
     category: string;
@@ -10,6 +12,7 @@ export default function Start({
     type: string;
   };
   handleChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  startGame: () => void;
 }) {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-neutral-200 text-center overflow-clip">
@@ -20,6 +23,7 @@ export default function Start({
         How well do you know your trivia?
       </p>
       <GameOptions {...{ gameOptions, handleChange }} />
+      <StartButton {...{ startGame }} />
     </div>
   );
 }
