@@ -1,6 +1,14 @@
 export default function QAndA({
+  item,
   selectAnswer,
 }: {
+  item: {
+    id: string;
+    question: string;
+    answers: [];
+    correct: string;
+    selected: null;
+    checked: boolean;
   };
   selectAnswer: (id: string, answer: string) => void;
 }) {
