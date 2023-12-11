@@ -1,6 +1,7 @@
 "use client";
 import { useState, useCallback, ChangeEvent } from "react";
 import Start from "./components/start/Start";
+import Footer from "./components/Footer";
 
 
 interface GameOptions {
@@ -52,6 +53,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Start {...{ gameOptions, handleChange, startGame }} />
         />
+      <Footer />
     </main>
   );
 }
