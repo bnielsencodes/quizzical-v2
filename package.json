@@ -1,5 +1,6 @@
 {
   "name": "quizzical-ts-tailwind",
+  "homepage": "https://bnielsencodes.github.io/quizzical-ts-tailwind",
   "version": "0.1.0",
   "private": true,
   "scripts": {
