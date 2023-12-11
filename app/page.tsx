@@ -102,9 +102,12 @@ export default function Home() {
 
   return (
     <main className="relative grid place-items-center h-[100svh] bg-neutral-100">
+      {!gameStarted ? (
         <Start {...{ gameOptions, handleChange, startGame }} />
+      ) : (
         <Quiz
         />
+      )}
       <Footer />
       <BlobImages />
     </main>
