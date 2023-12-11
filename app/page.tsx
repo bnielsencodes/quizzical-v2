@@ -107,6 +107,8 @@ export default function Home() {
       ) : (
         <Quiz
           {...{
+            questions,
+            selectAnswer,
             checkAnswers,
             answersChecked,
             answersCorrect,
