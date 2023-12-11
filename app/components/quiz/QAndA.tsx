@@ -21,6 +21,24 @@ export default function QAndA({
     selectAnswer(item.id, answer);
   }
 
+  const answerElements = answers.map((answer) => {
+    let id: string | null = null;
+    if (item.checked) {
+      if (item.correct === answer) {
+        id = "correct";
+      } else if (item.selected === answer) {
+        id = "incorrect";
+      } else {
+        id = "not-selected";
+      }
+    }
+    return (
+      <button
+      >
+      </button>
+    );
+  });
+
   return (
     <div className="flex justify-between border-b-[0.79px] border-purple-300 mb-[15px]">
     </div>
