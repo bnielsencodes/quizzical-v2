@@ -1,5 +1,6 @@
 "use client";
 import { useState, useCallback, ChangeEvent } from "react";
+import Start from "./components/start/Start";
 
 
 interface GameOptions {
@@ -41,6 +42,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <Start {...{ gameOptions, handleChange, startGame }} />
         />
     </main>
   );
