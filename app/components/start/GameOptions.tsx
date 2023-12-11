@@ -26,6 +26,7 @@ export default function GameOptions({
           id="category"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
           value={gameOptions.category}
+          onChange={handleChange}
         >
           <option value="">Any Category</option>
           <option value="9">General Knowledge</option>
@@ -65,6 +66,7 @@ export default function GameOptions({
           id="difficulty"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
           value={gameOptions.difficulty}
+          onChange={handleChange}
         >
           <option value="">Any Difficulty</option>
           <option value="easy">Easy</option>
@@ -83,6 +85,7 @@ export default function GameOptions({
           id="type"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
           value={gameOptions.type}
+          onChange={handleChange}
         >
           <option value="">Any Type</option>
           <option value="multiple">Multiple Choice</option>
