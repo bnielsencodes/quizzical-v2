@@ -1,5 +1,9 @@
 import { nanoid } from "nanoid";
 import { decode } from "html-entities";
+import Image from "next/image";
+import correctIcon from "/public/assets/icons/circle-check-solid.svg";
+import incorrectIcon from "/public/assets/icons/circle-xmark-solid.svg";
+
 export default function QAndA({
   item,
   selectAnswer,
@@ -55,6 +59,26 @@ export default function QAndA({
           {answerElements}
         </div>
       </div>
+      {item.checked &&
+        (item.selected === item.correct ? (
+          <Image
+            className="w-8 h-8 mr-2"
+            src={correctIcon}
+            alt="Encircled checkmark icon"
+            width={20}
+            height={62}
+            sizes="100vw"
+          />
+        ) : (
+          <Image
+            className="w-8 h-8 mr-2"
+            src={incorrectIcon}
+            alt="Encircled x icon"
+            width={20}
+            height={62}
+            sizes="100vw"
+          />
+        ))}
     </div>
   );
 }
