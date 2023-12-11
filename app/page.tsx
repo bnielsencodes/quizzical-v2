@@ -5,6 +5,7 @@ import Start from "./components/start/Start";
 import Quiz from "./components/quiz/Quiz";
 import Footer from "./components/Footer";
 import BlobImages from "./components/BlobImages";
+import Confetti from "react-confetti";
 
 //
 //
@@ -143,6 +144,8 @@ export default function Home() {
       <Footer />
       <BlobImages />
 
+      {/* show confetti when 5/5 questions correct */}
+      {allCorrect && <Confetti />}
     </main>
   );
 }
