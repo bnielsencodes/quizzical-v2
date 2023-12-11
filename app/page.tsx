@@ -1,5 +1,6 @@
 "use client";
 import { useState, useCallback, ChangeEvent } from "react";
+import getQuestions from "./lib/getQuestions";
 import Start from "./components/start/Start";
 import Footer from "./components/Footer";
 import BlobImages from "./components/BlobImages";
