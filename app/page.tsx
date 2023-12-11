@@ -28,6 +28,17 @@ export default function Home() {
   const [answersCorrect, setAnswersCorrect] = useState<number>(0);
   const [allCorrect, setAllCorrect] = useState<boolean>(false);
 
+  // change game options function
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const { name, value } = event.target;
+    setGameOptions((prevGameOptions) => {
+      return {
+        ...prevGameOptions,
+        [name]: value,
+      };
+    });
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         />
