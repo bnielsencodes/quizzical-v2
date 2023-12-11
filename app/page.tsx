@@ -61,6 +61,35 @@ export default function Home() {
     );
   }
 
+  // check correct answers function
+  function checkAnswers() {
+    let selected = true;
+    questions.forEach((question: any) => {
+      if (question.selected === null) {
+        selected = false;
+        return;
+      }
+    });
+    if (!selected) {
+      return;
+    }
+    setQuestions((questions: any) =>
+      questions.map((question: any) => {
+        return { ...question, checked: true };
+      })
+    );
+    setAnswersChecked(true);
+    let correct = 0;
+    console.log(questions);
+    questions.forEach((question) => {
+      if (question.correct === question.selected) {
+        correct += 1;
+      }
+    });
+    setAnswersCorrect(correct);
+    setAllCorrect(correct === 5);
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Start {...{ gameOptions, handleChange, startGame }} />
