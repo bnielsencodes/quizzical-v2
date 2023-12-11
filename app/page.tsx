@@ -2,6 +2,7 @@
 import { useState, useCallback, ChangeEvent } from "react";
 import getQuestions from "./lib/getQuestions";
 import Start from "./components/start/Start";
+import Quiz from "./components/quiz/Quiz";
 import Footer from "./components/Footer";
 import BlobImages from "./components/BlobImages";
 
@@ -102,6 +103,7 @@ export default function Home() {
   return (
     <main className="relative grid place-items-center h-[100svh] bg-neutral-100">
         <Start {...{ gameOptions, handleChange, startGame }} />
+        <Quiz
         />
       <Footer />
       <BlobImages />
