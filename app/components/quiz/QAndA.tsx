@@ -38,6 +38,7 @@ export default function QAndA({
       <button
         key={nanoid()}
         id={nanoid()}
+        onClick={() => handleSelectAnswer(answer)}
       >
         {decode(answer)}
       </button>
