@@ -1,4 +1,5 @@
 "use client";
+import { useState, useCallback, ChangeEvent } from "react";
 
 
 interface GameOptions {
@@ -16,6 +17,17 @@ interface Question {
   checked: boolean;
 }
 export default function Home() {
+  const [gameOptions, setGameOptions] = useState<GameOptions>({
+    category: "",
+    difficulty: "",
+    type: "",
+  });
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [gameStarted, setGameStarted] = useState<boolean>(false);
+  const [answersChecked, setAnswersChecked] = useState<boolean>(false);
+  const [answersCorrect, setAnswersCorrect] = useState<number>(0);
+  const [allCorrect, setAllCorrect] = useState<boolean>(false);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         />
