@@ -40,6 +40,14 @@ export default function Home() {
     });
   };
 
+
+  // start game function
+  async function startGame() {
+    let questions = await getQuestions(gameOptions);
+    setQuestions(questions);
+    setGameStarted(true);
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Start {...{ gameOptions, handleChange, startGame }} />
