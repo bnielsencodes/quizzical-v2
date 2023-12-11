@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 export default function QAndA({
   item,
   selectAnswer,
@@ -34,6 +35,8 @@ export default function QAndA({
     }
     return (
       <button
+        key={nanoid()}
+        id={nanoid()}
       >
       </button>
     );
