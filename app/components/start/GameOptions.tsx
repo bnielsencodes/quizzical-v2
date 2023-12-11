@@ -1,4 +1,15 @@
+import { ChangeEvent } from "react";
+
 export default function GameOptions({
+  gameOptions,
+  handleChange,
+}: {
+  gameOptions: {
+    category: string;
+    difficulty: string;
+    type: string;
+  };
+  handleChange: (event: ChangeEvent<HTMLSelectElement>) => void;
 }) {
   return (
     <div className="mx-5 mb-[35px]">
@@ -14,6 +25,7 @@ export default function GameOptions({
           name="category"
           id="category"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          value={gameOptions.category}
         >
           <option value="">Any Category</option>
           <option value="9">General Knowledge</option>
@@ -52,6 +64,7 @@ export default function GameOptions({
           name="difficulty"
           id="difficulty"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          value={gameOptions.difficulty}
         >
           <option value="">Any Difficulty</option>
           <option value="easy">Easy</option>
@@ -69,6 +82,7 @@ export default function GameOptions({
           name="type"
           id="type"
           className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          value={gameOptions.type}
         >
           <option value="">Any Type</option>
           <option value="multiple">Multiple Choice</option>
