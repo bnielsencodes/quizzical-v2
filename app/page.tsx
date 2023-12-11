@@ -6,6 +6,8 @@ import Quiz from "./components/quiz/Quiz";
 import Footer from "./components/Footer";
 import BlobImages from "./components/BlobImages";
 
+//
+//
 
 interface GameOptions {
   category: string;
@@ -21,6 +23,11 @@ interface Question {
   selected: string | null;
   checked: boolean;
 }
+
+//
+//
+
+// COMPONENT
 export default function Home() {
   const [gameOptions, setGameOptions] = useState<GameOptions>({
     category: "",
@@ -33,6 +40,9 @@ export default function Home() {
   const [answersCorrect, setAnswersCorrect] = useState<number>(0);
   const [allCorrect, setAllCorrect] = useState<boolean>(false);
 
+  //
+  //
+
   // change game options function
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const { name, value } = event.target;
@@ -44,6 +54,8 @@ export default function Home() {
     });
   };
 
+  //
+  //
 
   // start game function
   async function startGame() {
@@ -51,6 +63,9 @@ export default function Home() {
     setQuestions(questions);
     setGameStarted(true);
   }
+
+  //
+  //
 
   // select answer function
   function selectAnswer(id: string, answer: string) {
@@ -62,6 +77,9 @@ export default function Home() {
       })
     );
   }
+
+  //
+  //
 
   // check correct answers function
   function checkAnswers() {
@@ -92,6 +110,9 @@ export default function Home() {
     setAllCorrect(correct === 5);
   }
 
+  //
+  //
+
   // play again function
   const playAgain = useCallback(() => {
     setGameStarted(false);
@@ -99,6 +120,9 @@ export default function Home() {
     setAnswersChecked(false);
     setAllCorrect(false);
   }, []);
+
+  //
+  //
 
   return (
     <main className="relative grid place-items-center h-[100svh] bg-neutral-100">
@@ -118,6 +142,7 @@ export default function Home() {
       )}
       <Footer />
       <BlobImages />
+
     </main>
   );
 }
