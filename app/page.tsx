@@ -50,6 +50,17 @@ export default function Home() {
     setGameStarted(true);
   }
 
+  // select answer function
+  function selectAnswer(id: string, answer: string) {
+    setQuestions((questions) =>
+      questions.map((question) => {
+        return question.id === id
+          ? { ...question, selected: answer }
+          : question;
+      })
+    );
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Start {...{ gameOptions, handleChange, startGame }} />
