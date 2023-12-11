@@ -27,6 +27,14 @@ const config: Config = {
       inter: ["var(--font-inter)"],
       karla: ["var(--font-karla)"],
     },
+    screens: {
+      // => @media (min-width: 768px) { ... }
+      md: "768px",
+      // => @media (min-width: 1024px) { ... }
+      lg: "1024px",
+      // => @media (min-width: 1440px) { ... }
+      xl: "1440px",
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
