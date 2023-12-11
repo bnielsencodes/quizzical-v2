@@ -1,4 +1,11 @@
 export default function QuizButton({
+  checkAnswers,
+  answersChecked,
+  playAgain,
+}: {
+  checkAnswers: () => void;
+  answersChecked: boolean;
+  playAgain: () => void;
 }) {
   return (
     <button

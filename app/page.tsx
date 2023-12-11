@@ -106,6 +106,11 @@ export default function Home() {
         <Start {...{ gameOptions, handleChange, startGame }} />
       ) : (
         <Quiz
+          {...{
+            checkAnswers,
+            answersChecked,
+            playAgain,
+          }}
         />
       )}
       <Footer />
