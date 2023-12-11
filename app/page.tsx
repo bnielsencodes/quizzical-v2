@@ -2,6 +2,7 @@
 import { useState, useCallback, ChangeEvent } from "react";
 import Start from "./components/start/Start";
 import Footer from "./components/Footer";
+import BlobImages from "./components/BlobImages";
 
 
 interface GameOptions {
@@ -54,6 +55,7 @@ export default function Home() {
         <Start {...{ gameOptions, handleChange, startGame }} />
         />
       <Footer />
+      <BlobImages />
     </main>
   );
 }
