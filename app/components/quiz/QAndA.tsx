@@ -1,4 +1,5 @@
 import { nanoid } from "nanoid";
+import { decode } from "html-entities";
 export default function QAndA({
   item,
   selectAnswer,
@@ -38,12 +39,21 @@ export default function QAndA({
         key={nanoid()}
         id={nanoid()}
       >
+        {decode(answer)}
       </button>
     );
   });
 
   return (
     <div className="flex justify-between border-b-[0.79px] border-purple-300 mb-[15px]">
+      <div>
+        <p className="text-purple-100 font-karla font-bold leading-[18.7px] md:text-[1.25rem]">
+          {decode(item.question)}
+        </p>
+        <div className="flex flex-wrap gap-y-3 mt-[13px] mb-[14px]">
+          {answerElements}
+        </div>
+      </div>
     </div>
   );
 }
