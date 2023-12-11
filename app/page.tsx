@@ -90,6 +90,14 @@ export default function Home() {
     setAllCorrect(correct === 5);
   }
 
+  // play again function
+  const playAgain = useCallback(() => {
+    setGameStarted(false);
+    setQuestions([]);
+    setAnswersChecked(false);
+    setAllCorrect(false);
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Start {...{ gameOptions, handleChange, startGame }} />
