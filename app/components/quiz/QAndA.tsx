@@ -3,6 +3,7 @@ import { decode } from "html-entities";
 import Image from "next/image";
 import correctIcon from "/public/assets/icons/circle-check-solid.svg";
 import incorrectIcon from "/public/assets/icons/circle-xmark-solid.svg";
+import clsx from "clsx";
 
 export default function QAndA({
   item,
@@ -39,13 +40,27 @@ export default function QAndA({
       }
     }
     return (
-      <button
-        key={nanoid()}
-        onClick={() => handleSelectAnswer(answer)}
-      >
-        {decode(answer)}
-      </button>
+      <li key={nanoid()}>
+        <button
           id={id}
+          className={clsx(
+            "customTransition flex items-center justify-center py-[6px] px-[10px] border-[0.8px] border-purple-200 rounded-lg mr-[12.75px] text-purple-100 text-[15px] font-medium leading-[12.4px] text-center md:py-[6px] md:text-[14px] shadow-answer active:translate-y-[2px] active:shadow-none",
+            {
+              "bg-[transparent] lg:hover:bg-purple-300 lg:hover-90":
+                item.selected !== answer,
+              "bg-purple-300": item.selected === answer,
+              "lg:hover:opacity-100 active:shadow-answer active:translate-y-0":
+                item.checked,
+              "lg:hover:bg-none": item.checked && id === "not-selected",
+              "lg:hover:bg-correct": item.checked && id === "correct",
+              "lg:hover:bg-incorrect": item.checked && id === "incorrect",
+            }
+          )}
+          onClick={() => handleSelectAnswer(answer)}
+        >
+          {decode(answer)}
+        </button>
+      </li>
     );
   });
 
