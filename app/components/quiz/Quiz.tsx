@@ -25,9 +25,9 @@ export default function Quiz({
     : [];
 
   return (
-    <div className="relative flex flex-col items-center content-center w-screen min-h-screen pt-[60px] px-10 pb-[15px] bg-neutral-200 md:pt-[13px] md:px-[75px]">
-      <div className="z-20 mb-[5px] md:max-w-[750px]">{questionElements}</div>
-      <div className="z-20 flex items-center justify-around w-[93%] max-w-[450px] mb-[50px]">
+    <div className="relative z-20 flex flex-col items-center w-screen h-full pt-24 px-6 pb-[120px] md:pt-0 md:px-14 md:pb-0">
+      <ul className="mb-5 md:max-w-[750px]">{questionElements}</ul>
+      <div className="flex items-center justify-around w-[93%] max-w-[450px]">
         {answersChecked && (
           <span className="text-purple-100 font-bold text-[13px] md:text-[1rem]">
             You scored {answersCorrect}/5 correct answers
