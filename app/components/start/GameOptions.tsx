@@ -24,7 +24,7 @@ export default function GameOptions({
         <select
           name="category"
           id="category"
-          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.category}
           onChange={handleChange}
         >
@@ -67,7 +67,7 @@ export default function GameOptions({
         <select
           name="difficulty"
           id="difficulty"
-          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.difficulty}
           onChange={handleChange}
         >
@@ -89,7 +89,7 @@ export default function GameOptions({
         <select
           name="type"
           id="type"
-          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.type}
           onChange={handleChange}
         >
