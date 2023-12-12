@@ -65,14 +65,12 @@ export default function QAndA({
   });
 
   return (
-    <div className="flex justify-between border-b-[0.79px] border-purple-300 mb-[15px]">
-      <div>
-        <p className="text-purple-100 font-karla font-bold leading-[18.7px] md:text-[1.25rem]">
+    <li className="flex justify-between border-b-[0.79px] border-purple-300 py-4">
+      <div className="max-w-[calc(100%-20px)]">
+        <p className="text-purple-100 font-karla text-[1.125rem] font-bold leading-[1.4rem] md:text-[19px]">
           {decode(item.question)}
         </p>
-        <div className="flex flex-wrap gap-y-3 mt-[13px] mb-[14px]">
-          {answerElements}
-        </div>
+        <ul className="flex flex-wrap gap-y-3 mt-[13px]">{answerElements}</ul>
       </div>
       {item.checked &&
         (item.selected === item.correct ? (
@@ -95,5 +93,6 @@ export default function QAndA({
           />
         ))}
     </div>
+    </li>
   );
 }
