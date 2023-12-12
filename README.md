@@ -15,10 +15,11 @@
 
 #### Desktop
 
-
+<img src="public/screenshots/desktop/desktop-start.png" alt="screenshot of Quizzical website" width="33%" height="auto"><img src="public/screenshots/desktop/desktop-quiz.png" alt="screenshot of Quizzical website" width="33%" height="auto"><img src="public/screenshots/desktop/desktop-quiz-scored.png" alt="screenshot of Quizzical website" width="33%" height="auto">
 
 #### Mobile
 
+<img src="public/screenshots/mobile/mobile-start.png" alt="screenshot of Quizzical website" width="33%" height="auto"><img src="public/screenshots/mobile/mobile-quiz.png" alt="screenshot of Quizzical website" width="33%" height="auto"><img src="public/screenshots/mobile/mobile-quiz-scored.png" alt="screenshot of Quizzical website" width="33%" height="auto">
 
 ### Link
 
