@@ -39,6 +39,9 @@ const config: Config = {
       boxShadow: {
         custom: "0 0 0.6em 0 rgb(0 0 0 / 0.2)",
         customHover: "0 0 0.6em 0 rgb(0 0 0 / 0.235)",
+        btn: "0 4px #d8def0",
+        answer: "0 2.5px #d8def0",
+        input: "0 4px #d8def0",
       },
     },
   },
