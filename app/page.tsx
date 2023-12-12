@@ -92,6 +92,7 @@ export default function Home() {
       }
     });
     if (!selected) {
+      alert("Please answer all questions first!");
       return;
     }
     setQuestions((questions: any) =>
