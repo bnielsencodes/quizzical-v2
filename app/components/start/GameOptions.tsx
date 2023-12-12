@@ -12,11 +12,11 @@ export default function GameOptions({
   handleChange: (event: ChangeEvent<HTMLSelectElement>) => void;
 }) {
   return (
-    <div className="mx-5 mb-[35px]">
-      <div className="flex items-center content-between mb-[17.5px] md:w-[550px]">
+    <ul className="flex flex-col w-[335px] mb-[18px] md:w-[550px]">
+      <li className="flex items-center justify-between mb-[18px]">
         {/* category option */}
         <label
-          className="mr-[16px] font-medium text-left md:w-[250px] md:mr-6 md:text-[1.1rem] md:font-bold"
+          className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
           htmlFor="category"
         >
           Category:
@@ -24,7 +24,7 @@ export default function GameOptions({
         <select
           name="category"
           id="category"
-          className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.category}
           onChange={handleChange}
         >
@@ -54,17 +54,20 @@ export default function GameOptions({
           <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
           <option value="32">Entertainment: Cartoon &amp; Animations</option>
         </select>
-      </div>
+      </li>
 
       {/* difficulty option */}
-      <div className="select-container">
-        <label className="select-label" htmlFor="difficulty">
+      <li className="flex items-center justify-between mb-[18px]">
+        <label
+          className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
+          htmlFor="difficulty"
+        >
           Difficulty:
         </label>
         <select
           name="difficulty"
           id="difficulty"
-          className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.difficulty}
           onChange={handleChange}
         >
@@ -73,17 +76,20 @@ export default function GameOptions({
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
-      </div>
+      </li>
 
       {/* type option */}
-      <div className="select-container">
-        <label className="select-label" htmlFor="type">
+      <li className="flex items-center justify-between mb-[18px]">
+        <label
+          className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
+          htmlFor="type"
+        >
           Type of questions:
         </label>
         <select
           name="type"
           id="type"
-          className="w-[180px] h-10 px-4 border-0 rounded-[4px] text-purple-200 shadow-custom md:w-full md:h-12 md:hover:shadow-customHover md:hover:scale-[1.005]"
+          className="customTransition w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.type}
           onChange={handleChange}
         >
@@ -91,7 +97,7 @@ export default function GameOptions({
           <option value="multiple">Multiple Choice</option>
           <option value="boolean">True / False</option>
         </select>
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 }
