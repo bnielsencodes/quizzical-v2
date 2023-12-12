@@ -28,7 +28,7 @@ export default function QAndA({
   }
 
   const answerElements = answers.map((answer) => {
-    let id: string | null = null;
+    let id: string | undefined = undefined;
     if (item.checked) {
       if (item.correct === answer) {
         id = "correct";
@@ -41,11 +41,11 @@ export default function QAndA({
     return (
       <button
         key={nanoid()}
-        id={nanoid()}
         onClick={() => handleSelectAnswer(answer)}
       >
         {decode(answer)}
       </button>
+          id={id}
     );
   });
 
