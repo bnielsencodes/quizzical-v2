@@ -72,27 +72,26 @@ export default function QAndA({
         </p>
         <ul className="flex flex-wrap gap-y-3 mt-[13px]">{answerElements}</ul>
       </div>
-      {item.checked &&
-        (item.selected === item.correct ? (
-          <Image
-            className="w-8 h-8 mr-2"
-            src={correctIcon}
-            alt="Encircled checkmark icon"
-            width={20}
-            height={62}
-            sizes="100vw"
-          />
-        ) : (
-          <Image
-            className="w-8 h-8 mr-2"
-            src={incorrectIcon}
-            alt="Encircled x icon"
-            width={20}
-            height={62}
-            sizes="100vw"
-          />
-        ))}
-    </div>
+      <div className="flex items-center min-w-5">
+        {item.checked &&
+          (item.selected === item.correct ? (
+            <Image
+              src={correctIcon}
+              alt="Encircled checkmark icon"
+              width={20}
+              height={62}
+              sizes="100vw"
+            />
+          ) : (
+            <Image
+              src={incorrectIcon}
+              alt="Encircled x icon"
+              width={20}
+              height={62}
+              sizes="100vw"
+            />
+          ))}
+      </div>
     </li>
   );
 }
