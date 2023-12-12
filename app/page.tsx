@@ -145,8 +145,10 @@ export default function Home() {
       <Footer />
       <BlobImages />
 
-      {/* show confetti when 5/5 questions correct */}
-      {allCorrect && <Confetti />}
+      <div className="z-30">
+        {/* show confetti when 5/5 questions correct */}
+        {allCorrect && <Confetti />}
+      </div>
     </main>
   );
 }
