@@ -15,11 +15,11 @@ export default function Start({
   startGame: () => void;
 }) {
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-neutral-200 text-center overflow-clip">
-      <h1 className="text-purple-100 font-karla text-[31.25px] leading-[36.53px] ">
+    <div className="relative z-20 flex flex-col items-center justify-center w-full h-full py-1 px-5 text-center overflow-clip">
+      <h1 className="text-purple-100 font-karla text-[2.5rem] leading-[36.53px] font-semibold md:text-[2.8rem]">
         Quizzical
       </h1>
-      <p className="mt-[11px] mb-[29px] text-purple-100 leading-5">
+      <p className="mt-5 mb-10 text-purple-100 leading-5 md:mt-7 md:text-[17px]">
         How well do you know your trivia?
       </p>
       <GameOptions {...{ gameOptions, handleChange }} />
