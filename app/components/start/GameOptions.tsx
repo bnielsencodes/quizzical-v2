@@ -58,7 +58,7 @@ export default function GameOptions({
         </select>
         {/* carat down icon */}
         <Image
-          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-[1/2]"
+          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-1/2"
           src={caratDownIcon}
           alt=""
           width={0}
@@ -89,7 +89,7 @@ export default function GameOptions({
         </select>
         {/* carat down icon */}
         <Image
-          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-[1/2]"
+          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-1/2"
           src={caratDownIcon}
           alt=""
           width={0}
@@ -119,7 +119,7 @@ export default function GameOptions({
         </select>
         {/* carat down icon */}
         <Image
-          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-[1/2]"
+          className="absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-1/2"
           src={caratDownIcon}
           alt=""
           width={0}
