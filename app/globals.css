@@ -22,6 +22,10 @@ body {
   transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 
+.customActive + customActiveImg:active {
+  transform: translateY(calc(-50%-3px));
+}
+
 #not-selected {
   color: rgb(41 50 100 / 0.4);
 }
