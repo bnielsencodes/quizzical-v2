@@ -11,7 +11,7 @@ export default function BlobImages() {
       <Image
         className="absolute top-0 right-0 z-10 md:hidden"
         src={blobYellowSm}
-        alt="yellow blob shape"
+        alt=""
         width={126}
         height={131}
         sizes="100vw"
@@ -19,7 +19,7 @@ export default function BlobImages() {
       <Image
         className="absolute top-0 right-0 z-10 hidden md:block"
         src={blobYellowLg}
-        alt="yellow blob shape"
+        alt=""
         width={158}
         height={141}
         sizes="100vw"
@@ -29,7 +29,7 @@ export default function BlobImages() {
       <Image
         className="absolute bottom-0 left-0 z-10 md:hidden"
         src={blobBlueSm}
-        alt="blue blob shape"
+        alt=""
         width={65}
         height={62}
         sizes="100vw"
@@ -37,7 +37,7 @@ export default function BlobImages() {
       <Image
         className="absolute bottom-0 left-0 z-10 hidden md:block"
         src={blobBlueLg}
-        alt="blue blob shape"
+        alt=""
         width={148}
         height={118}
         sizes="100vw"
