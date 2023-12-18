@@ -37,8 +37,8 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        btn: "0 4px #d8def0",
-        answer: "0 2.5px #d8def0",
+        answer: "0 3px #d8def0",
+        btn: "0 5px #d8def0",
         input: "0 4px #d8def0",
       },
     },
