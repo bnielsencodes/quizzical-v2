@@ -1,4 +1,6 @@
 import { ChangeEvent } from "react";
+import Image from "next/image";
+import caratDownIcon from "/public/assets/icons/carat-down.svg";
 
 export default function GameOptions({
   gameOptions,
@@ -13,7 +15,7 @@ export default function GameOptions({
 }) {
   return (
     <ul className="flex flex-col w-[335px] mb-[18px] md:w-[550px]">
-      <li className="flex items-center justify-between mb-[18px]">
+      <li className="relative flex items-center justify-between mb-[18px]">
         {/* category option */}
         <label
           className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
@@ -54,10 +56,19 @@ export default function GameOptions({
           <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
           <option value="32">Entertainment: Cartoon &amp; Animations</option>
         </select>
+        {/* carat down icon */}
+        <Image
+          className="absolute top-0 right-0 z-10 w-5 h-5"
+          src={caratDownIcon}
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
       </li>
 
       {/* difficulty option */}
-      <li className="flex items-center justify-between mb-[18px]">
+      <li className="relative flex items-center justify-between mb-[18px]">
         <label
           className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
           htmlFor="difficulty"
@@ -76,10 +87,19 @@ export default function GameOptions({
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
         </select>
+        {/* carat down icon */}
+        <Image
+          className="absolute top-0 right-0 z-10 w-5 h-5"
+          src={caratDownIcon}
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
       </li>
 
       {/* type option */}
-      <li className="flex items-center justify-between mb-[18px]">
+      <li className="relative flex items-center justify-between mb-[18px]">
         <label
           className="min-w-[99px] mr-4 text-purple-100 text-[1.125rem] leading-[1.375rem] font-medium text-left md:min-w-[165px] md:mr-4 md:text-[1.15rem] md:font-semibold"
           htmlFor="type"
@@ -97,6 +117,15 @@ export default function GameOptions({
           <option value="multiple">Multiple Choice</option>
           <option value="boolean">True / False</option>
         </select>
+        {/* carat down icon */}
+        <Image
+          className="absolute top-0 right-0 z-10 w-5 h-5"
+          src={caratDownIcon}
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
       </li>
     </ul>
   );
