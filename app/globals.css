@@ -22,7 +22,7 @@ body {
   transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 
-.customActive + customActiveImg:active {
+.customActive:active + customActiveImg {
   transform: translateY(calc(-50%-3px));
 }
 
