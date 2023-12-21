@@ -26,7 +26,7 @@ export default function GameOptions({
         <select
           name="category"
           id="category"
-          className="customTransition customActive w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="customTransition customActive w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input peer active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.category}
           onChange={handleChange}
         >
@@ -58,7 +58,7 @@ export default function GameOptions({
         </select>
         {/* carat down icon */}
         <Image
-          className="customActiveImg absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-1/2 group-active:-translate-y-[calc(50%-3px)]"
+          className="customActiveImg absolute top-1/2 right-[14px] z-10 w-5 h-5 -translate-y-1/2 peer-active:-translate-y-[calc(50%-3px)]"
           src={caratDownIcon}
           alt=""
           width={0}
