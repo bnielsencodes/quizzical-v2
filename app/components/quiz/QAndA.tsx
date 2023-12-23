@@ -44,7 +44,7 @@ export default function QAndA({
         <button
           id={id}
           className={clsx(
-            "customTransition flex items-center justify-center py-[6px] px-[10px] border-[0.8px] border-purple-200 rounded-lg mr-[12.75px] text-purple-100 text-[15px] font-medium leading-[1.25rem] text-left shadow-answer active:translate-y-[2.5px] active:shadow-none",
+            "customTransition flex items-center justify-center py-[6px] px-[10px] border-[0.8px] border-purple-200 rounded-lg mr-[12.75px] text-purple-100 text-[15px] font-medium leading-[1.25rem] text-left shadow-answer focus:outline-2 focus:outline-purple-400 active:translate-y-[2.5px] active:shadow-none",
             {
               "bg-[transparent] lg:hover:bg-purple-300 lg:hover-90":
                 item.selected !== answer,
