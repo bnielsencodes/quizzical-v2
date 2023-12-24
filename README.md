@@ -27,7 +27,7 @@
 
 ### Link
 
-- Live Site URL: [https://quizzical-v2-bnielsencodes.vercel.app/](https://quizzical-v2-bnielsencodes.vercel.app/)
+- Live Site URL: [https://quizzical-v2-tau.vercel.app](https://quizzical-v2-tau.vercel.app)
 
 ## My Process
 
