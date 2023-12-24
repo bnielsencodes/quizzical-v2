@@ -67,9 +67,9 @@ export default function QAndA({
   });
 
   return (
-    <li className="flex justify-between border-b-[0.79px] border-purple-300 py-4">
-      <div className="max-w-[calc(100%-20px)]">
-        <p className="text-purple-100 font-karla text-[1.125rem] font-bold leading-[1.4rem] md:text-[19px]">
+    <li className="flex justify-between border-b-[0.79px] border-purple-300 pt-4 pb-6">
+      <div className="max-w-[calc(100%-28px)] md:max-w-[calc(100%-35px)]">
+        <p className="text-purple-100 font-karla text-[1.125rem] font-bold leading-[1.4rem] md:text-[19px] lg:text-[21px]">
           {decode(item.question)}
         </p>
         <ul className="flex flex-wrap gap-y-3 mt-[13px]">{answerElements}</ul>

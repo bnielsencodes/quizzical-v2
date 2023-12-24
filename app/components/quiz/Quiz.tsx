@@ -1,5 +1,6 @@
 import QAndA from "./QAndA";
 import QuizButton from "./QuizButton";
+import clsx from "clsx";
 
 export default function Quiz({
   questions,
@@ -25,9 +26,14 @@ export default function Quiz({
     : [];
 
   return (
-    <div className="relative z-20 flex flex-col items-center w-screen h-full pt-24 px-6 pb-[120px] md:pt-0 md:px-14 md:pb-0">
-      <ul className="mb-5 md:max-w-[750px]">{questionElements}</ul>
-      <div className="flex items-center justify-around w-[93%] max-w-[450px]">
+    <div className="relative z-20 flex flex-col items-center px-5 mt-20 mb-28 md:px-14 md:mb-32 lg:px-0">
+      <ul className="mb-5 md:max-w-[786px]">{questionElements}</ul>
+      <div
+        className={clsx(
+          "flex items-center justify-around w-full max-w-[400px] lg:max-w-[445px]",
+          { "justify-between": answersChecked }
+        )}
+      >
         {answersChecked && (
           <span className="text-purple-100 font-bold text-[13px] md:text-[1rem]">
             You scored {answersCorrect}/5 correct answers

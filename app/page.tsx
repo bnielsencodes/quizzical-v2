@@ -127,7 +127,7 @@ export default function Home() {
   //
 
   return (
-    <main className="relative flex items-center justify-center bg-neutral-200 min-h-svh">
+    <main className="relative flex items-center justify-center min-h-screen bg-neutral-200">
       {!gameStarted ? (
         <Start {...{ gameOptions, handleChange, startGame }} />
       ) : (

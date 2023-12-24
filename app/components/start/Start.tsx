@@ -15,7 +15,7 @@ export default function Start({
   startGame: () => void;
 }) {
   return (
-    <div className="relative z-20 flex flex-col items-center justify-center w-full h-full min-h-screen py-1 px-5 text-center overflow-clip">
+    <div className="relative z-20 flex flex-col items-center justify-center px-5 text-center">
       <h1 className="text-purple-100 font-karla text-[2.5rem] leading-[36.53px] font-semibold md:text-[2.8rem]">
         Quizzical
       </h1>
