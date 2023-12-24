@@ -20,8 +20,8 @@ const config: Config = {
       },
       blue: "#dbebf9",
       yellow: "#fffacc",
-      correct: "#94d7a2",
-      incorrect: "#f8bcbc",
+      green: "#94d7a2",
+      red: "#f8bcbc",
     },
     fontFamily: {
       inter: ["var(--font-inter)"],
