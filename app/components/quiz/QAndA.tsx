@@ -44,16 +44,18 @@ export default function QAndA({
         <button
           id={id}
           className={clsx(
-            "customTransition flex items-center justify-center py-[6px] px-[10px] border-[0.8px] border-purple-200 rounded-lg mr-[12.75px] text-purple-100 text-[15px] font-medium leading-[1.25rem] text-left shadow-answer focus:outline-2 focus:outline-purple-400 active:translate-y-[2.5px] active:shadow-none",
+            "focus-outline transition-bg flex items-center justify-center py-[6px] px-[10px] border-[0.8px] border-purple-200 rounded-lg mr-[12.75px] text-purple-100 text-[15px] font-medium leading-[1.25rem] text-left shadow-answer active:outline-none",
             {
-              "bg-[transparent] lg:hover:bg-purple-300 lg:hover-90":
-                item.selected !== answer,
+              "bg-[transparent]": item.selected !== answer,
               "bg-purple-300": item.selected === answer,
-              "lg:hover:opacity-100 active:shadow-answer active:translate-y-0":
+              "lg:hover:bg-purple-300 lg:hover-90 active:shadow-none active:translate-y-[2.5px]":
+                !item.checked,
+              "disabled lg:hover:opacity-100 active:shadow-answer active:translate-y-0":
                 item.checked,
-              "lg:hover:bg-none": item.checked && id === "not-selected",
-              "lg:hover:bg-correct": item.checked && id === "correct",
-              "lg:hover:bg-incorrect": item.checked && id === "incorrect",
+              "lg:hover:bg-[transparent]":
+                item.checked && id === "not-selected",
+              "lg:hover:bg-green": item.checked && id === "correct",
+              "lg:hover:bg-red": item.checked && id === "incorrect",
             }
           )}
           onClick={() => handleSelectAnswer(answer)}

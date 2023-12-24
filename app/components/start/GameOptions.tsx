@@ -26,7 +26,7 @@ export default function GameOptions({
         <select
           name="category"
           id="category"
-          className="w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input peer focus:outline-2 focus:outline-purple-100 active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="shadow-input focus-outline transition-bg w-full h-11 px-4 border-0 rounded-[15px] bg-[#E9E9ED] text-purple-200 appearance-none peer active:translate-y-[3.5px] active:shadow-none active:outline-none md:h-12 lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.category}
           onChange={handleChange}
         >
@@ -78,7 +78,7 @@ export default function GameOptions({
         <select
           name="difficulty"
           id="difficulty"
-          className="w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input peer focus:outline-2 focus:outline-purple-100 active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="shadow-input focus-outline transition-bg w-full h-11 px-4 border-0 rounded-[15px] bg-[#E9E9ED] text-purple-200 appearance-none peer active:translate-y-[3.5px] active:shadow-none active:outline-none md:h-12 lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.difficulty}
           onChange={handleChange}
         >
@@ -109,7 +109,7 @@ export default function GameOptions({
         <select
           name="type"
           id="type"
-          className="w-full h-11 px-4 border-0 rounded-[15px] text-purple-200 md:h-12 appearance-none shadow-input peer focus:outline-2 focus:outline-purple-100 active:translate-y-[3.5px] active:shadow-none lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
+          className="shadow-input focus-outline transition-bg w-full h-11 px-4 border-0 rounded-[15px] bg-[#E9E9ED] text-purple-200 appearance-none peer active:translate-y-[3.5px] active:shadow-none active:outline-none md:h-12 lg:hover:bg-purple-400 lg:hover:bg-opacity-40 lg:hover:cursor-pointer"
           value={gameOptions.type}
           onChange={handleChange}
         >
